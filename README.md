@@ -1,2 +1,2 @@
-# Cobblemon-Template
-Template for Fabric addon mods for Cobblemon
+# Pet Your Pokemon
+Cobblemon sidemod that allows you to pet your Pokemon to raise friendship 💕
