@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "petyourpokemon",
   "version": "${version}",
-  "name": "ExampleMod",
-  "description": "Template for Cobblemon addon development",
+  "name": "Pet Your Pokemon",
+  "description": "Pet your Pokemon to raise friendship!",
   "authors": [
     "Reyn"
   ],
@@ -14,7 +14,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.example.examplemod.ExampleMod"
+      "dot.reyn.petyourpokemon.PetYourPokemon"
     ]
   },
   "mixins": [

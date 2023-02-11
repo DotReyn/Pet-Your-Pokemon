@@ -1,12 +1,18 @@
 plugins {
     kotlin("jvm")
-    id("fabric-loom")
     `maven-publish`
     java
+    id("architectury-plugin") version("3.4-SNAPSHOT")
+    id("dev.architectury.loom") version("0.12.0-SNAPSHOT")
 }
 
 group = property("maven_group")!!
 version = property("mod_version")!!
+
+architectury {
+    platformSetupLoomIde()
+    fabric()
+}
 
 repositories {
     maven {
@@ -15,6 +21,8 @@ repositories {
             includeGroup("curse.maven")
         }
     }
+    mavenCentral()
+    maven("https://maven.impactdev.net/repository/development/")
 }
 
 dependencies {
@@ -26,6 +34,7 @@ dependencies {
     modImplementation("net.fabricmc.fabric-api:fabric-api:${property("fabric_api_version")}")
 
     modImplementation("curse.maven:cobblemon-687131:${property("cobblemon_curse_file_id")}")
+    modImplementation("dev.architectury", "architectury-fabric", "6.3.49")
 }
 
 tasks {

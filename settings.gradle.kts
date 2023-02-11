@@ -1,4 +1,4 @@
-rootProject.name = "CobblemonTemplate"
+rootProject.name = "PetYourPokemon"
 pluginManagement {
     repositories {
         maven("https://maven.fabricmc.net/") {
@@ -6,6 +6,8 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
+        maven("https://maven.architectury.dev/")
+        maven("https://maven.minecraftforge.net/")
     }
 
     val loom_version: String by settings
