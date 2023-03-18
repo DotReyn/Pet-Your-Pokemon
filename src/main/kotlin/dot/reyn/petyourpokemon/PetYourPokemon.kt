@@ -1,5 +1,6 @@
 package dot.reyn.petyourpokemon
 
+import com.cobblemon.mod.common.CobblemonItems
 import com.cobblemon.mod.common.api.pokemon.feature.GlobalSpeciesFeatures
 import com.cobblemon.mod.common.entity.pokemon.PokemonEntity
 import com.google.gson.GsonBuilder
@@ -10,6 +11,7 @@ import net.fabricmc.api.ModInitializer
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents
 import net.fabricmc.fabric.api.event.player.UseEntityCallback
+import net.minecraft.item.ItemStack
 import net.minecraft.text.Style
 import net.minecraft.text.Text
 import net.minecraft.util.ActionResult
